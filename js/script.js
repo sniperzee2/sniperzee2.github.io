@@ -90,8 +90,8 @@ $(document).ready(function(){
   
       clearInterval(_INTERVAL_VAL);
       setTimeout(function() {
-        _INTERVAL_VAL = setInterval(Delete, 50);
-      }, 1000);
+        _INTERVAL_VAL = setInterval(Delete, 400);
+      }, 800);
     }
   }
   
@@ -117,13 +117,13 @@ $(document).ready(function(){
       // Start to display the next sentence after some time
       setTimeout(function() {
         _CURSOR.style.display = 'inline-block';
-        _INTERVAL_VAL = setInterval(Type, 100);
-      }, 200);
+        _INTERVAL_VAL = setInterval(Type, 500);
+      }, 1000);
     }
   }
   
   // Start the typing effect on load
-  _INTERVAL_VAL = setInterval(Type, 100);
+  _INTERVAL_VAL = setInterval(Type, 400);
 
 
 
